@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 /*RESET*/
 
 body {
@@ -218,6 +219,98 @@ ul li {
     position: absolute;
     bottom: 10%;
 }
+
+/*
+
+
+
+    Fale conosco
+
+
+
+
+
+    */
+
+#contato .container{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-form{
+    display: flexbox;
+    width: 550px;
+    height: 420px;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 4rem;
+    margin-top: -4rem;
+}
+
+#fale {
+    width: 100%;
+}
+
+#fale input, textarea{
+    margin: 2px;
+}
+
+
+.box-form h2,
+p{
+    text-align: center;
+}
+
+.box-form h2 ,p{
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.box-form .input-form form{
+    margin-top: 1em;
+    display: grid;
+    width: 320px;
+    height: 150px;
+    justify-content: center;
+}
+
+
+.box-form .input-form input{
+    width: 400px;
+    height: 45px;
+}
+
+.box-form .input-form textarea{
+    resize: none;
+    height: 100px;
+}
+
+.box-form .input-form input:focus,
+textarea:focus{
+    outline-color: #f02aa6;
+}
+
+.box-form .input-form button{
+    color: white;
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #f02aa6 100%));
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 31px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s ease-in;
+    margin-left: 140px;
+}
+
+.box-form .input-form button:hover{
+background: var(--Gradient-1-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50)100%),
+            linear-gradient(180deg, #FF6F48 0%, #f02aa6 100%));
+}
+
 /*
 
 
@@ -230,18 +323,18 @@ ul li {
 
     */
 
-footer{
+footer {
     background-color: #13183F;
     padding: 1rem 0rem;
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-btn{
+.footer-btn {
     color: white;
     background: var(--Gradient-2, linear-gradient(180deg, #4851ff 0%, #f02aa6 100%));
     width: 167px;
@@ -255,9 +348,9 @@ footer{
     transition: background .2s ease-in;
 }
 
-.footer-btn:hover{
-    background: var(--Gradient-2, linear-gradient(0deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.50) 100%),
-    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%));
+.footer-btn:hover {
+    background: var(--Gradient-2, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%),
+            linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%));
 }
 
 
@@ -384,13 +477,13 @@ footer{
 
 }
 
-@media screen and (max-width: 850px){
-    .heroi-texto h1{
+@media screen and (max-width: 850px) {
+    .heroi-texto h1 {
         width: 100%;
         font-size: 40px;
     }
 
-    .heroi-texto p{
+    .heroi-texto p {
         width: 95%;
         font: 20px;
     }
@@ -399,13 +492,15 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem 0rem;
     }
+
     #box-gradient {
         height: 200px;
     }
 
-    .box-curso{
+    .box-curso {
         width: 100%;
     }
+
     .box-curso h2 {
         width: 100%;
         position: absolute;
@@ -413,8 +508,8 @@ footer{
         padding-left: 0;
 
     }
-    
-    .box-curso p{
+
+    .box-curso p {
         width: 80%;
     }
 
@@ -433,15 +528,15 @@ footer{
         font-size: 27px;
     }
 
-    .box-curso{
+    .box-curso {
         margin-left: 0;
     }
 
-    .box-curso p{
+    .box-curso p {
         font-size: 80%;
     }
 
-    .footer-btn{
+    .footer-btn {
         width: 130px;
         height: 40px;
         font-size: 15px;
